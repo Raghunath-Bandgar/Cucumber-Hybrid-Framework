@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="270.971">
+    <testcase classname="login functionality" name="login with valid credentials" time="23.084">
+        <system-out><![CDATA[Given user has opened the application URL...................................passed
+And navigated to login page.................................................passed
+When user enters valid email Rishaan@gmail.com address......................passed
+And user enters valid 1234 password.........................................passed
+And click on login button...................................................passed
+Then user should be able to successfully login..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="login functionality" name="login with valid credentials 2" time="20.43">
+        <system-out><![CDATA[Given user has opened the application URL...................................passed
+And navigated to login page.................................................passed
+When user enters valid email Ritvika@gmail.com address......................passed
+And user enters valid 5678 password.........................................passed
+And click on login button...................................................passed
+Then user should be able to successfully login..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="login functionality" name="login with Invalid credentials" time="19.475">
+        <system-out><![CDATA[Given user has opened the application URL...................................passed
+And navigated to login page.................................................passed
+When user enters Invalid email address......................................passed
+And user enters Invalid "12345" password....................................passed
+And click on login button...................................................passed
+Then user should get proper warning message.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="login functionality" name="login with valid username and invalid password" time="20.393">
+        <system-out><![CDATA[Given user has opened the application URL...................................passed
+And navigated to login page.................................................passed
+When user enters valid email "Rishaan@gmail.com" address....................passed
+And user enters Invalid "12345" password....................................passed
+And click on login button...................................................passed
+Then user should get proper warning message.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="login functionality" name="login with Invalid username and valid password" time="21.227">
+        <system-out><![CDATA[Given user has opened the application URL...................................passed
+And navigated to login page.................................................passed
+When user enters Invalid email address......................................passed
+And user enters valid "12345" password......................................passed
+And click on login button...................................................passed
+Then user should get proper warning message.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="login functionality" name="login without providing any creditials" time="19.953">
+        <system-out><![CDATA[Given user has opened the application URL...................................passed
+And navigated to login page.................................................passed
+When user don’t enters any email address....................................passed
+And user don’t enters any  password.........................................passed
+And click on login button...................................................passed
+Then user should get proper warning message.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User Registration" name="Register with manedatory fields" time="30.3">
+        <system-out><![CDATA[Given User navigate to Register account page................................passed
+When User enter the below details into the field............................passed
+And select privacy policy...................................................passed
+And click on continue button................................................passed
+Then Account should get successfully created................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User Registration" name="Register with All fields" time="32.564">
+        <system-out><![CDATA[Given User navigate to Register account page................................passed
+When User enter the below details into the field............................passed
+And Select Yes for Newslatter...............................................passed
+And select privacy policy...................................................passed
+And click on continue button................................................passed
+Then Account should get successfully created................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User Registration" name="Register without providing any fields" time="26.485">
+        <system-out><![CDATA[Given User navigate to Register account page................................passed
+Given User navigate to Register account page................................passed
+When User dont enters details into the any fields...........................passed
+And click on continue button................................................passed
+Then warning messages should be displayed under all mandatory fields........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User Registration" name="Register with duplicate email address" time="20.913">
+        <system-out><![CDATA[Given User navigate to Register account page................................passed
+When User enter the below details into the field with duplicate Email address.passed
+And Select Yes for Newslatter...............................................passed
+And select privacy policy...................................................passed
+And click on continue button................................................passed
+Then warning message informing to the user about duplicate email address....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search functionality" name="Search for the valid product" time="12.928">
+        <system-out><![CDATA[Given user opens the application............................................passed
+When user enter valid product "HP" into the search field....................passed
+And user click on search button.............................................passed
+Then valid product should get displayed in search result....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search functionality" name="Search for the non existing product" time="12.296">
+        <system-out><![CDATA[Given user opens the application............................................passed
+When user enter non existing product "Honda" into the search field..........passed
+And user click on search button.............................................passed
+Then proper text formating the user about no product matching should be displayed.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search functionality" name="Search without providing any product" time="10.436">
+        <system-out><![CDATA[Given user opens the application............................................passed
+When user dont enter product into the search field..........................passed
+And user click on search button.............................................passed
+Then proper text formating the user about no product matching should be displayed.passed
+]]></system-out>
+    </testcase>
+</testsuite>
